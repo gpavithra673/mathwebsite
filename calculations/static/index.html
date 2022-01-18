@@ -130,5 +130,56 @@
           });
     
       </script> 
+      <script type="text/javascript">
+        var button;
+        button = document.querySelector("#calbutton1");
+        button.addEventListener("click", function () {
+          var atext, btext, ctext;
+          var aval, bval, cval;
+          atext = document.querySelector("#aedit");
+          btext = document.querySelector("#bedit");
+          ctext = document.querySelector("#cedit");
+      
+          if(Number(atext.value)&&Number(btext.value))
+          {
+            aval=parseInt(atext.value);
+            bval=parseInt(btext.value);
+          }
+          else{
+            window.alert("enter only number");
+          }
+      
+      
+          
+      
+          cval = 3.14 * aval * aval * bval;
+          ctext.value = "" + cval;
+        });
+      </script>
+      <script type="text/javascript">
+        var button;
+        button = document.querySelector("#calbutton2");
+        button.addEventListener("click", function () {
+      
+         var lengthtext,breadthtext,areatext;
+         var aval,bval,cval;
+          lengthtext=document.querySelector("#lengthedit");
+          breadthtext=document.querySelector("#breadthedit")
+          areatext=document.querySelector("#areaedit");
+            
+          if(Number(lengthtext.value)&&Number(breadthtext.value))
+          {
+            aval=parseInt(lemgthtext.value);
+            bval=parseInt(breadthtext.value);
+          }
+          else{
+            window.alert("enter only number");
+          }
+          
+          cval=aval*bval
+          areatext.value=cval;
+        });
+      
+      </script>
   </body>
 </html>
